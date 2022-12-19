@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compte à rebours</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 id="afficher">Compte à rebours</h1>
+    <div class="box">
+        <div style="display: flex; gap: 12rem;">
+            <h1>#1</h1>
+            <button id="start">Démarré</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Stop</button>
+        </div>
+        <div class="affi">
+            <div class="voir">
+                <h2>Heures</h2>
+                <p id="affichHr">00h</p>
+                <input type="number" placeholder="Votre chiffre ici" id="hrValue" max="60" maxlength="2" required>
+            </div>
+            <div class="voir">
+                <h2>Minutes</h2>
+                <p id="affichMin">00min</p>
+                <input type="number" placeholder="Votre chiffre ici" id="minValue" max="60" maxlength="2" required>
+            </div>
+            <div class="voir">
+                <h2>Secondes</h2>
+                <p id="affichSec">00sec</p>
+                <input type="number" placeholder="Votre chiffre ici" id="secValue" max="60" maxlength="2" required>
+            </div>
+        </div>
+        <input type="submit" id="send">
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
